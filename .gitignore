@@ -10,4 +10,5 @@ runs
 *.DS_Store
 out
 .DS_Store
+__pycache__
 
