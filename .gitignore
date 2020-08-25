@@ -1,0 +1,12 @@
+dataset
+checkpoints
+runs
+/checkpoints/
+.ipynb_checkpoints
+*.pickle
+*.zip
+*.idea
+*pycache*
+*.DS_Store
+out
+

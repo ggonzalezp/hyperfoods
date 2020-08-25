@@ -1,0 +1,23 @@
+producer_class	xtools.gsea.GseaPreranked
+producer_timestamp	1581673820771
+param	rpt_label	testtt
+param	rnd_seed	timestamp
+param	set_min	15
+param	zip_report	false
+param	create_svgs	false
+param	scoring_scheme	weighted
+param	rnk	/home/ggonzalezp/Desktop/hyperfoods_ismb/interpretation_influence_layers/out/gcn/layers_1/raw/split_0/drug_embeddings_gsea.rnk
+param	norm	meandiv
+param	out	/home/ggonzalezp/Desktop/GSEA_Linux_4.0.3/feb14
+param	mode	Max_probe
+param	include_only_symbols	true
+param	help	false
+param	set_max	500
+param	gmx	c2.cp.kegg.v7.0.symbols.gmt
+param	make_sets	true
+param	plot_top_x	20
+param	gui	false
+param	nperm	1000
+param	collapse	No_Collapse
+
+file	/home/ggonzalezp/Desktop/GSEA_Linux_4.0.3/feb14/testtt.GseaPreranked.1581673820771/index.html

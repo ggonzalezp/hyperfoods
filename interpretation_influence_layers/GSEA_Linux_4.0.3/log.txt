@@ -1,0 +1,800 @@
+echo Using bundled JDK.
+499      [INFO  ] - Parameters passing to GSEAPreranked.main:
+501      [INFO  ] - rnk	/home/ggonzalezp/Desktop/hyperfoods_ismb/interpretation_influence_layers/out/gcn/layers_1/raw/split_0/drug_embeddings_gsea.rnk
+501      [INFO  ] - gmx	c2.cp.kegg.v7.0.symbols.gmt
+501      [INFO  ] - rpt_label	testtt
+501      [INFO  ] - collapse	No_Collapse
+501      [INFO  ] - zip_report	false
+501      [INFO  ] - gui	false
+501      [INFO  ] - nperm	1000
+519      [INFO  ] - Made Vdb dir JIT: /home/ggonzalezp/Desktop/GSEA_Linux_4.0.3/feb14
+549      [INFO  ] - Begun importing: RankedList from: /home/ggonzalezp/Desktop/hyperfoods_ismb/interpretation_influence_layers/out/gcn/layers_1/raw/split_0/drug_embeddings_gsea.rnk
+1050     [WARN  ] - Duplicate GeneSet member: MTG1
+1051     [WARN  ] - Duplicate GeneSet member: GK2
+1052     [WARN  ] - Duplicate GeneSet member: LY6G6D
+1052     [WARN  ] - Duplicate GeneSet member: FAM21B
+1052     [WARN  ] - Duplicate GeneSet member: ZNF20
+1052     [WARN  ] - Duplicate GeneSet member: MFRP
+1053     [WARN  ] - Duplicate GeneSet member: PCLO
+1053     [WARN  ] - Duplicate GeneSet member: DAO
+1053     [WARN  ] - Duplicate GeneSet member: LAT2
+1053     [WARN  ] - Duplicate GeneSet member: HACL1
+1053     [WARN  ] - Duplicate GeneSet member: MGAT2
+1054     [WARN  ] - Duplicate GeneSet member: NTNG1
+1054     [WARN  ] - Duplicate GeneSet member: TTLL5
+1054     [WARN  ] - Duplicate GeneSet member: BEX2
+1054     [WARN  ] - Duplicate GeneSet member: ODZ3
+1054     [WARN  ] - Duplicate GeneSet member: RBP2
+1055     [WARN  ] - Duplicate GeneSet member: SYT12
+1055     [WARN  ] - Duplicate GeneSet member: HK1
+1055     [WARN  ] - Duplicate GeneSet member: C15ORF38
+1055     [WARN  ] - Duplicate GeneSet member: NDUFAF3
+1055     [WARN  ] - Duplicate GeneSet member: IL25
+1055     [WARN  ] - Duplicate GeneSet member: BOLA2
+1055     [WARN  ] - Duplicate GeneSet member: RBP5
+1056     [WARN  ] - Duplicate GeneSet member: KRT6C
+1056     [WARN  ] - Duplicate GeneSet member: ANXA8
+1056     [WARN  ] - Duplicate GeneSet member: SNX30
+1056     [WARN  ] - Duplicate GeneSet member: RGS13
+1056     [WARN  ] - Duplicate GeneSet member: C1GALT1C1
+1057     [WARN  ] - Duplicate GeneSet member: ODF2
+1057     [WARN  ] - Duplicate GeneSet member: PRR4
+1057     [WARN  ] - Duplicate GeneSet member: RPL36A
+1057     [WARN  ] - Duplicate GeneSet member: PEX1
+1057     [WARN  ] - Duplicate GeneSet member: CLP1
+1058     [WARN  ] - Duplicate GeneSet member: TK2
+1058     [WARN  ] - Duplicate GeneSet member: PIGU
+1058     [WARN  ] - Duplicate GeneSet member: CEACAM3
+1058     [WARN  ] - Duplicate GeneSet member: SCYL3
+1058     [WARN  ] - Duplicate GeneSet member: RBP2
+1058     [WARN  ] - Duplicate GeneSet member: ARHGEF18
+1059     [WARN  ] - Duplicate GeneSet member: TIPARP
+1059     [WARN  ] - Duplicate GeneSet member: BRF2
+1059     [WARN  ] - Duplicate GeneSet member: GLA
+1059     [WARN  ] - Duplicate GeneSet member: RIT1
+1059     [WARN  ] - Duplicate GeneSet member: GCK
+1059     [WARN  ] - Duplicate GeneSet member: MRPL27
+1060     [WARN  ] - Duplicate GeneSet member: GBP3
+1060     [WARN  ] - Duplicate GeneSet member: POM121
+1060     [WARN  ] - Duplicate GeneSet member: DRP2
+1060     [WARN  ] - Duplicate GeneSet member: MADD
+1060     [WARN  ] - Duplicate GeneSet member: RAI1
+1060     [WARN  ] - Duplicate GeneSet member: MAFA
+1060     [WARN  ] - Duplicate GeneSet member: PDLIM3
+1061     [WARN  ] - Duplicate GeneSet member: RLF
+1061     [WARN  ] - Duplicate GeneSet member: PIP
+1061     [WARN  ] - Duplicate GeneSet member: RPS12
+1061     [WARN  ] - Duplicate GeneSet member: GREM1
+1061     [WARN  ] - Duplicate GeneSet member: LOR
+1061     [WARN  ] - Duplicate GeneSet member: EBF3
+1061     [WARN  ] - Duplicate GeneSet member: BRPF1
+1062     [WARN  ] - Duplicate GeneSet member: MOS
+1062     [WARN  ] - Duplicate GeneSet member: CRTC1
+1062     [WARN  ] - Duplicate GeneSet member: KRTAP5-1
+1062     [WARN  ] - Duplicate GeneSet member: CEP68
+1062     [WARN  ] - Duplicate GeneSet member: CIZ1
+1062     [WARN  ] - Duplicate GeneSet member: HN1L
+1062     [WARN  ] - Duplicate GeneSet member: LCA10
+1062     [WARN  ] - Duplicate GeneSet member: MADD
+1062     [WARN  ] - Duplicate GeneSet member: AGT
+1062     [WARN  ] - Duplicate GeneSet member: PHF2
+1063     [WARN  ] - Duplicate GeneSet member: TRAPPC2
+1063     [WARN  ] - Duplicate GeneSet member: F11
+1063     [WARN  ] - Duplicate GeneSet member: CAMP
+1063     [WARN  ] - Duplicate GeneSet member: PIGX
+1063     [WARN  ] - Duplicate GeneSet member: APC2
+1063     [WARN  ] - Duplicate GeneSet member: NPR2
+1063     [WARN  ] - Duplicate GeneSet member: GDA
+1063     [WARN  ] - Duplicate GeneSet member: TANC2
+1064     [WARN  ] - Duplicate GeneSet member: TRPC7
+1064     [WARN  ] - Duplicate GeneSet member: TCHP
+1064     [WARN  ] - Duplicate GeneSet member: APOL3
+1064     [WARN  ] - Duplicate GeneSet member: GCOM1
+1064     [WARN  ] - Duplicate GeneSet member: MPP7
+1064     [WARN  ] - Duplicate GeneSet member: LIPA
+1064     [WARN  ] - Duplicate GeneSet member: CHP
+1064     [WARN  ] - Duplicate GeneSet member: MBD1
+1064     [WARN  ] - Duplicate GeneSet member: ISY1
+1064     [WARN  ] - Duplicate GeneSet member: TOR1AIP2
+1065     [WARN  ] - Duplicate GeneSet member: ZNF581
+1065     [WARN  ] - Duplicate GeneSet member: ZNF32
+1065     [WARN  ] - Duplicate GeneSet member: LCP1
+1065     [WARN  ] - Duplicate GeneSet member: CCR4
+1065     [WARN  ] - Duplicate GeneSet member: ALG10
+1065     [WARN  ] - Duplicate GeneSet member: ANKRD17
+1065     [WARN  ] - Duplicate GeneSet member: LAMB2
+1065     [WARN  ] - Duplicate GeneSet member: SOCS4
+1065     [WARN  ] - Duplicate GeneSet member: FEZ1
+1065     [WARN  ] - Duplicate GeneSet member: HADH
+1065     [WARN  ] - Duplicate GeneSet member: CLIP2
+1065     [WARN  ] - Duplicate GeneSet member: ARPC4
+1066     [WARN  ] - Duplicate GeneSet member: RAB11B
+1066     [WARN  ] - Duplicate GeneSet member: TGS1
+1066     [WARN  ] - Duplicate GeneSet member: LAMA3
+1066     [WARN  ] - Duplicate GeneSet member: ARG1
+1066     [WARN  ] - Duplicate GeneSet member: CERS2
+1066     [WARN  ] - Duplicate GeneSet member: MIP
+1066     [WARN  ] - Duplicate GeneSet member: DAB1
+1066     [WARN  ] - Duplicate GeneSet member: MT2A
+1066     [WARN  ] - Duplicate GeneSet member: CMC1
+1066     [WARN  ] - Duplicate GeneSet member: ART1
+1066     [WARN  ] - Duplicate GeneSet member: PAM
+1067     [WARN  ] - Duplicate GeneSet member: POLR1C
+1067     [WARN  ] - Duplicate GeneSet member: LRP10
+1067     [WARN  ] - Duplicate GeneSet member: PTPRO
+1067     [WARN  ] - Duplicate GeneSet member: SAT2
+1067     [WARN  ] - Duplicate GeneSet member: POP1
+1067     [WARN  ] - Duplicate GeneSet member: STK3
+1067     [WARN  ] - Duplicate GeneSet member: TAP1
+1067     [WARN  ] - Duplicate GeneSet member: PISD
+1067     [WARN  ] - Duplicate GeneSet member: GSS
+1067     [WARN  ] - Duplicate GeneSet member: MAGI1
+1068     [WARN  ] - Duplicate GeneSet member: IK
+1068     [WARN  ] - Duplicate GeneSet member: RP1
+1068     [WARN  ] - Duplicate GeneSet member: VCL
+1068     [WARN  ] - Duplicate GeneSet member: DMP1
+1068     [WARN  ] - Duplicate GeneSet member: DDX21
+1068     [WARN  ] - Duplicate GeneSet member: IP
+1068     [WARN  ] - Duplicate GeneSet member: ELF1
+1068     [WARN  ] - Duplicate GeneSet member: AZI1
+1068     [WARN  ] - Duplicate GeneSet member: EXOC1
+1068     [WARN  ] - Duplicate GeneSet member: MUM1
+1068     [WARN  ] - Duplicate GeneSet member: WIPF1
+1068     [WARN  ] - Duplicate GeneSet member: CAST
+1068     [WARN  ] - Duplicate GeneSet member: HK2
+1068     [WARN  ] - Duplicate GeneSet member: CHAT
+1069     [WARN  ] - Duplicate GeneSet member: PDF
+1069     [WARN  ] - Duplicate GeneSet member: RAD54B
+1069     [WARN  ] - Duplicate GeneSet member: HK1
+1069     [WARN  ] - Duplicate GeneSet member: CGA
+1069     [WARN  ] - Duplicate GeneSet member: HK1
+1070     [WARN  ] - Duplicate GeneSet member: IMP3
+1070     [WARN  ] - Duplicate GeneSet member: TYMP
+1070     [WARN  ] - Duplicate GeneSet member: FKBP4
+1070     [WARN  ] - Duplicate GeneSet member: EIF4H
+1070     [WARN  ] - Duplicate GeneSet member: CCR10
+1070     [WARN  ] - Duplicate GeneSet member: KPNA7
+1070     [WARN  ] - Duplicate GeneSet member: MBP
+1070     [WARN  ] - Duplicate GeneSet member: CLK1
+1070     [WARN  ] - Duplicate GeneSet member: NAF1
+1070     [WARN  ] - Duplicate GeneSet member: RP1
+1070     [WARN  ] - Duplicate GeneSet member: USP10
+1070     [WARN  ] - Duplicate GeneSet member: USP16
+1070     [WARN  ] - Duplicate GeneSet member: AK3
+1070     [WARN  ] - Duplicate GeneSet member: IFNA13
+1071     [WARN  ] - Duplicate GeneSet member: ARL1
+1071     [WARN  ] - Duplicate GeneSet member: ARX
+1071     [WARN  ] - Duplicate GeneSet member: SCAP
+1071     [WARN  ] - Duplicate GeneSet member: RAD1
+1071     [WARN  ] - Duplicate GeneSet member: NOV
+1071     [WARN  ] - Duplicate GeneSet member: MBD3
+1071     [WARN  ] - Duplicate GeneSet member: EPO
+1071     [WARN  ] - Duplicate GeneSet member: MTHFD1L
+1071     [WARN  ] - Duplicate GeneSet member: FH
+1071     [WARN  ] - Duplicate GeneSet member: ADRA1A
+1071     [WARN  ] - Duplicate GeneSet member: EAF2
+1071     [WARN  ] - Duplicate GeneSet member: PDK1
+1071     [WARN  ] - Duplicate GeneSet member: SRA1
+1071     [WARN  ] - Duplicate GeneSet member: PRB1
+1071     [WARN  ] - Duplicate GeneSet member: AIM1
+1071     [WARN  ] - Duplicate GeneSet member: HGF
+1071     [WARN  ] - Duplicate GeneSet member: PGD
+1072     [WARN  ] - Duplicate GeneSet member: ALPI
+1072     [WARN  ] - Duplicate GeneSet member: RAD54L
+1072     [WARN  ] - Duplicate GeneSet member: TUBB3
+1072     [WARN  ] - Duplicate GeneSet member: MBP
+1072     [WARN  ] - Duplicate GeneSet member: VAT1
+1072     [WARN  ] - Duplicate GeneSet member: APITD1
+1072     [WARN  ] - Duplicate GeneSet member: PAN2
+1072     [WARN  ] - Duplicate GeneSet member: LSS
+1072     [WARN  ] - Duplicate GeneSet member: VEGFA
+1072     [WARN  ] - Duplicate GeneSet member: CCNL1
+1072     [WARN  ] - Duplicate GeneSet member: DLG4
+1072     [WARN  ] - Duplicate GeneSet member: FAN1
+1072     [WARN  ] - Duplicate GeneSet member: NOS2
+1072     [WARN  ] - Duplicate GeneSet member: SMAD1
+1072     [WARN  ] - Duplicate GeneSet member: BAP1
+1073     [WARN  ] - Duplicate GeneSet member: EPO
+1073     [WARN  ] - Duplicate GeneSet member: UBL5
+1073     [WARN  ] - Duplicate GeneSet member: C9
+1073     [WARN  ] - Duplicate GeneSet member: LRP1
+1073     [WARN  ] - Duplicate GeneSet member: SLC31A1
+1073     [WARN  ] - Duplicate GeneSet member: CFL1
+1073     [WARN  ] - Duplicate GeneSet member: CDH1
+1073     [WARN  ] - Duplicate GeneSet member: VDR
+1073     [WARN  ] - Duplicate GeneSet member: NMB
+1073     [WARN  ] - Duplicate GeneSet member: LIPH
+1073     [WARN  ] - Duplicate GeneSet member: VCP
+1073     [WARN  ] - Duplicate GeneSet member: RBP3
+1080     [INFO  ] - There were duplicate row identifiers in the specified ranked list. One id was arbitarilly choosen. Details are below. 
+Generally, this is OK, but if you want to avoid this automagic, edit your ranked list so that all row ids are unique
+
+# of row ids in original dataset: 14896
+# of row UNIQUE ids in original dataset: 14699
+# The duplicates were
+<br><pre>MTG1
+GK2
+LY6G6D
+FAM21B
+ZNF20
+MFRP
+PCLO
+DAO
+LAT2
+HACL1
+MGAT2
+NTNG1
+TTLL5
+BEX2
+ODZ3
+RBP2
+SYT12
+HK1
+C15ORF38
+NDUFAF3
+IL25
+BOLA2
+RBP5
+KRT6C
+ANXA8
+SNX30
+RGS13
+C1GALT1C1
+ODF2
+PRR4
+RPL36A
+PEX1
+CLP1
+TK2
+PIGU
+CEACAM3
+SCYL3
+RBP2
+ARHGEF18
+TIPARP
+BRF2
+GLA
+RIT1
+GCK
+MRPL27
+GBP3
+POM121
+DRP2
+MADD
+RAI1
+MAFA
+PDLIM3
+RLF
+PIP
+RPS12
+GREM1
+LOR
+EBF3
+BRPF1
+MOS
+CRTC1
+KRTAP5-1
+CEP68
+CIZ1
+HN1L
+LCA10
+MADD
+AGT
+PHF2
+TRAPPC2
+F11
+CAMP
+PIGX
+APC2
+NPR2
+GDA
+TANC2
+TRPC7
+TCHP
+APOL3
+GCOM1
+MPP7
+LIPA
+CHP
+MBD1
+ISY1
+TOR1AIP2
+ZNF581
+ZNF32
+LCP1
+CCR4
+ALG10
+ANKRD17
+LAMB2
+SOCS4
+FEZ1
+HADH
+CLIP2
+ARPC4
+RAB11B
+TGS1
+LAMA3
+ARG1
+CERS2
+MIP
+DAB1
+MT2A
+CMC1
+ART1
+PAM
+POLR1C
+LRP10
+PTPRO
+SAT2
+POP1
+STK3
+TAP1
+PISD
+GSS
+MAGI1
+IK
+RP1
+VCL
+DMP1
+DDX21
+IP
+ELF1
+AZI1
+EXOC1
+MUM1
+WIPF1
+CAST
+HK2
+CHAT
+PDF
+RAD54B
+HK1
+CGA
+HK1
+IMP3
+TYMP
+FKBP4
+EIF4H
+CCR10
+KPNA7
+MBP
+CLK1
+NAF1
+RP1
+USP10
+USP16
+AK3
+IFNA13
+ARL1
+ARX
+SCAP
+RAD1
+NOV
+MBD3
+EPO
+MTHFD1L
+FH
+ADRA1A
+EAF2
+PDK1
+SRA1
+PRB1
+AIM1
+HGF
+PGD
+ALPI
+RAD54L
+TUBB3
+MBP
+VAT1
+APITD1
+PAN2
+LSS
+VEGFA
+CCNL1
+DLG4
+FAN1
+NOS2
+SMAD1
+BAP1
+EPO
+UBL5
+C9
+LRP1
+SLC31A1
+CFL1
+CDH1
+VDR
+NMB
+LIPH
+VCP
+RBP3
+</pre>
+1092     [INFO  ] - No ranked list collapsing was done .. using original as is
+to parse>c2.cp.kegg.v7.0.symbols.gmt< got: [c2.cp.kegg.v7.0.symbols.gmt]
+1093     [INFO  ] - Begun importing: GeneSetMatrix from: c2.cp.kegg.v7.0.symbols.gmt
+1122     [INFO  ] - Got gsets: 186 now preprocessing them ... min: 15 max: 500
+1134     [INFO  ] - Done preproc for smaller than: 15
+1188     [INFO  ] - Timestamp used as the random seed: 1581673820980
+shuffleGeneSet for GeneSet 1/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 6/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 11/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 16/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 21/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 26/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 31/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 36/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 41/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 46/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 51/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 56/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 61/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 66/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 71/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 76/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 81/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 86/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 91/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 96/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 101/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 106/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 111/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 116/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 121/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 126/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 131/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 136/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 141/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 146/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 151/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 156/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 161/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+shuffleGeneSet for GeneSet 166/170 nperm: 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+GeneSetCohorted: 501 / 1000
+GeneSetCohorted_scored: 501 / 1000
+Creating marker selection reports ...
+Creating FDR reports ...
+Done FDR reports for positive phenotype
+Done FDR reports for negative phenotype
+Creating global reports ...
+Done all reports!!
+15305    [INFO  ] - Made Vdb dir JIT: /home/ggonzalezp/gsea_home/reports_cache_foo
+Time taken: 14 secs
