@@ -36,7 +36,3 @@ python ChebModel_CV_hpsearch.py --out_dir 'cheb_nlayers_2_hidden_8' --device_idx
 
 
 
-
-
-
-
