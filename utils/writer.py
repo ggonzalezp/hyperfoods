@@ -66,10 +66,10 @@ class Writer:
         message = (
             'Epoch: {}/{}, Duration: {:.3f}s, Train Loss: {:.4f}, '
             'Test Loss: {:.4f}, Val Loss: {:.4f}, '
-            'Test Acc: {:.3f}, F1: {:.3f}, real_f1: {:.3f}, roc_auc: {:.3f}, aupr: {:.4f}'
+            'Test Acc: {:.3f}, F1: {:.3f},  roc_auc: {:.3f}, aupr: {:.4f}'
         ).format(info['current_epoch'], info['epochs'], info['t_duration'],
                  info['train_loss'], info['test_loss'], info['val_loss'],
-                 info['acc'], info['f1'], info['real_f1'], info['roc_auc'],
+                 info['acc'], info['f1'], info['roc_auc'],
                  info['aupr'])
         with open(self.log_file, 'a') as log_file:
             log_file.write('{:s}\n'.format(message))
@@ -87,8 +87,6 @@ class Writer:
                                     info['current_epoch'])
             self.display.add_scalar('data/f1', info['f1'],
                                     info['current_epoch'])
-            self.display.add_scalar('data/real_f1', info['real_f1'],
-                                    info['current_epoch'])
             self.display.add_scalar('data/roc_auc', info['roc_auc'],
                                     info['current_epoch'])
             self.display.add_scalar('data/aupr', info['aupr'],
@@ -98,11 +96,11 @@ class Writer:
         message = (
             'Epoch: {}/{}, Duration: {:.3f}s, Duration per batch: {:.3f}s, Train Loss: {:.4f}, '
             'Test Loss: {:.4f}, Val Loss: {:.4f},  '
-            'Test Balanced Acc: {:.3f}, F1: {:.3f}, real_f1: {:.3f}, roc_auc: {:.3f}, aupr: {:.4f}'
+            'Test Balanced Acc: {:.3f}, F1: {:.3f},  roc_auc: {:.3f}, aupr: {:.4f}'
         ).format(info['current_epoch'], info['epochs'], info['t_duration'], info['t_duration_per_batch'],
                  info['train_loss'], info['test_loss'],
                   info['val_loss'],
-                  info['balanced_acc'], info['f1'], info['real_f1'],
+                  info['balanced_acc'], info['f1'], 
                  info['roc_auc'], info['aupr'])
         with open(self.log_file, 'a') as log_file:
             log_file.write('{:s}\n'.format(message))
@@ -120,8 +118,6 @@ class Writer:
                                     info['current_epoch'])
             self.display.add_scalar('data/test/f1', info['f1'],
                                     info['current_epoch'])
-            self.display.add_scalar('data/test/real_f1', info['real_f1'],
-                                    info['current_epoch'])
             self.display.add_scalar('data/test/roc_auc', info['roc_auc'],
                                     info['current_epoch'])
             self.display.add_scalar('data/test/aupr', info['aupr'],
@@ -134,9 +130,9 @@ class Writer:
         message = (
             'Epoch: {}/{}, Duration: {:.3f}s,  Train Loss: {:.4f}, '
             'Val Loss: {:.4f}, '
-            'Acc: {:.3f}, F1: {:.3f}, real_f1: {:.3f}, roc_auc: {:.3f}, aupr: {:.4f}'
+            'Acc: {:.3f}, F1: {:.3f}, roc_auc: {:.3f}, aupr: {:.4f}'
         ).format(info['current_epoch'], info['epochs'], info['t_duration'],
-                 info['train_loss'], info['val_loss'],  info['acc'], info['f1'], info['real_f1'],
+                 info['train_loss'], info['val_loss'],  info['acc'], info['f1'],
                  info['roc_auc'], info['aupr'])
 
         with open(self.log_file, 'a') as log_file:
@@ -152,8 +148,6 @@ class Writer:
             self.display.add_scalar('data/acc', info['acc'],
                                     info['current_epoch'])
             self.display.add_scalar('data/f1', info['f1'],
-                                    info['current_epoch'])
-            self.display.add_scalar('data/real_f1', info['real_f1'],
                                     info['current_epoch'])
             self.display.add_scalar('data/roc_auc', info['roc_auc'],
                                     info['current_epoch'])

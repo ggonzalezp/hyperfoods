@@ -11,4 +11,6 @@ runs
 out
 .DS_Store
 __pycache__
+*.pyc
+.pyc
 

@@ -16,7 +16,7 @@ from torch_geometric.data import DataLoader
 from utils import utils, train_eval, DataLoader
 from utils.writer import Writer
 from models.networks_gcn import ChebModel
-from models.script_cv import *
+# from models.script_cv import *
 from utils import train_eval
 
 import json
@@ -24,16 +24,15 @@ import pandas as pd
 from sklearn.metrics import roc_curve, auc
 from inspect import  signature
 import matplotlib.pyplot as plt
-torch.set_num_threads(2)
+torch.set_num_threads(5)
 import os
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
 
 parser.add_argument('--name', default='test', type=str, help='name of the experiment')
-parser.add_argument('--dataset_dir', default='./dataset', help='input data path ')
+parser.add_argument('--dataset_dir', default='./dataset/test', help='input data path ')
 parser.add_argument('--out_dir', default='./out_test_cv', help='output data path ')
-parser.add_argument('--dataset_version', default='new', help='version of dataset to use: scirep/new')
 
 
 parser.add_argument('--device_idx', default=8, type=int)
@@ -54,10 +53,8 @@ parser.add_argument('--feature_agg_mode', default='cat', type=str, help='Feature
 
 # optimizer hyperparmeters
 parser.add_argument('--optimizer', type=str, default='Adam')
-# parser.add_argument('--lr', type=float, default=5e-3, help='Learning Rate')
 parser.add_argument('--lr_decay', type=float, default=0.98, help='Learning rate decay per epoch')
 parser.add_argument('--decay_step', type=int, default=1)
-# parser.add_argument('--regularization', type=float, default=1e-5, help='L2 regularization')
 
 
 
@@ -119,12 +116,10 @@ def cal_weights(dataset):
     n_full = labels_tensor.size(0)
     return torch.tensor([n_full / (2 * n_negcnive), n_full / (2 * n_positive)])
 
-if args.dataset_version == 'new':
-    drug_fp = osp.join(args.dataset_dir, 'processed', 'new', 'raw_ac.py')
-    pathway_fp = osp.join(args.dataset_dir, 'processed', 'pathway_kegg.py')
-elif args.dataset_version == 'scirep':
-    drug_fp = osp.join(args.dataset_dir, 'processed', 'scirep', 'raw_ac.py')
-    pathway_fp = osp.join(args.dataset_dir, 'processed', 'scirep', 'pathway_kegg.py')
+
+drug_fp = osp.join(args.dataset_dir, 'raw_ac.py')
+pathway_fp = osp.join(args.dataset_dir, 'pathway_kegg.py')
+
 
 
 ##CV
@@ -134,11 +129,8 @@ best_models_names = ''
 perfs_rounds = []
 for i in range(5):
 
-    if args.dataset_version == 'new':
-        ac_split_fp = sorted(glob('./dataset/data_hyperfoods_drugcentral/5foldCVsplits/{}/split_cancer_*_indices_approved_mysql_on_onecc_noiso_string_dense.hkl'.format(i)))
-    elif args.dataset_version == 'scirep':
-        ac_split_fp = sorted(glob('./dataset/data_ismb_scirep/5foldCVsplits/{}/split_cancer_*_indices_approved_mysql_on_onecc_noiso_string_dense.hkl'.format(i)))
 
+    ac_split_fp = sorted(glob('./dataset/data_hyperfoods_drugcentral/5foldCVsplits/{}/split_cancer_*_indices_approved_mysql_on_onecc_noiso_string_dense.hkl'.format(i)))
 
     out_dir_i = args.out_dir + '/{}'.format(i)
 

@@ -6,22 +6,7 @@ import numpy as np
 from sklearn.metrics import roc_auc_score, f1_score, precision_recall_curve, auc, precision_score, recall_score, balanced_accuracy_score, average_precision_score
 import matplotlib.pyplot as plt
 
-# Custom metrics
-def harmonic_mean(pos_metric, neg_metric):
-    return ((2.0 * pos_metric * neg_metric) / (pos_metric + neg_metric))
 
-
-def harmonic_f1(label_vector, pred_vector):
-    nac = label_vector == 0
-    ac = label_vector == 1
-
-    ac_predictions = pred_vector[ac] == 1
-    nac_predictions = pred_vector[nac] == 0
-
-    pos_f1 = np.float32(np.sum(ac_predictions)) / len(ac_predictions)
-    neg_f1 = np.float32(np.sum(nac_predictions)) / len(nac_predictions)
-
-    return harmonic_mean(pos_f1, neg_f1)
 
 
 #Functions to train and evaluate models
@@ -53,7 +38,6 @@ def gcnmodel_run(model, train_loader, val_loader, test_loader, sample_weights,
             'val_loss': val_perf['loss'],
             'acc': perf['acc'],
             'f1': perf['f1'],
-            'real_f1': perf['real_f1'],
             'roc_auc': perf['roc_auc'],
             'aupr': perf['aupr'],
             't_duration': t_duration,
@@ -86,6 +70,7 @@ def gcnmodel_run_es(model, train_loader, val_loader, test_loader, sample_weights
                                  sample_weights,
                                  device)
         t_duration = time.time() - t
+        t_duration_per_batch = (time.time() - t) / len(train_loader)
 
 
         val_perf = gcnmodel_eval(model, val_loader, sample_weights,
@@ -103,11 +88,11 @@ def gcnmodel_run_es(model, train_loader, val_loader, test_loader, sample_weights
                 'val_loss': val_perf['loss'],
                 'acc': perf['acc'],
                 'f1': perf['f1'],
-                'real_f1': perf['real_f1'],
                 'roc_auc': perf['roc_auc'],
                 'aupr': perf['aupr'],
                 't_duration': t_duration,
-                'balanced_acc':perf['balanced_acc']
+                'balanced_acc':perf['balanced_acc'],
+                't_duration_per_batch': t_duration_per_batch
             }
             # import pdb;      pdb.set_trace()
             if writer is not None:
@@ -196,8 +181,7 @@ def gcnmodel_eval(model, loader, sample_weights,
     y_prob = np.concatenate(y_prob_list).reshape(-1)
     y_pred = np.concatenate(y_pred_list).reshape(-1)
     roc_auc = roc_auc_score(y_test, y_prob)
-    f1 = harmonic_f1(y_test, y_pred)
-    real_f1 = f1_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred)
     precision, recall, _ = precision_recall_curve(y_test, y_prob)
     aupr = auc(recall, precision)
     acc = correct / len(loader.dataset)
@@ -212,7 +196,6 @@ def gcnmodel_eval(model, loader, sample_weights,
 
     perf = {
         'f1': f1,
-        'real_f1': real_f1,
         'roc_auc': roc_auc,
         'aupr': aupr,
         'acc': acc,
