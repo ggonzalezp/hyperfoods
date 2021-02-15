@@ -9,7 +9,7 @@ import numpy as np
 from torch_geometric.utils import is_undirected
 from torch_geometric.data import Data, DataLoader
 
-outdir = 'dataset/test'
+outdir = 'dataset/'
 os.makedirs(outdir, exist_ok=True)
 
 
@@ -31,8 +31,8 @@ torch.save(pathway_kegg_edge_index, pathway_kegg_data_fp)
 
 #Pre-processing dataset
 
-ac_gene_fp = sorted(glob('./dataset/data_hyperfoods_drugcentral/drugs_profiles_approved_mysql_on_onecc_noiso_string_dense.hkl'))
-ac_label_fp = './dataset/data_hyperfoods_drugcentral/drugs_labels_approved_mysql_on_onecc_noiso_string_dense.hkl'
+ac_gene_fp = sorted(glob('./dataset/drugs_profiles_approved_mysql_on_onecc_noiso_string_dense.hkl'))
+ac_label_fp = './dataset/drugs_labels_approved_mysql_on_onecc_noiso_string_dense.hkl'
 ac_label = np.array(hkl.load(ac_label_fp))
 
 # binary feature for each gene
