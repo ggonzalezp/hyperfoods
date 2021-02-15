@@ -126,7 +126,7 @@ best_models_names = ''
 perfs_rounds = []
 for i in range(5):
 
-    ac_split_fp = sorted(glob('./dataset/data_hyperfoods_drugcentral/5foldCVsplits/{}/split_cancer_*_indices_approved_mysql_on_onecc_noiso_string_dense.hkl'.format(i)))
+    ac_split_fp = sorted(glob('./dataset/5foldCVsplits/{}/split_cancer_*_indices_approved_mysql_on_onecc_noiso_string_dense.hkl'.format(i)))
 
     out_dir_i = args.out_dir + '/{}'.format(i)
 
