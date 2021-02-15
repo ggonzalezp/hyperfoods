@@ -249,9 +249,8 @@ for i in range(5):
     model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()
     perf = train_eval.gcnmodel_eval(model, test_loader, sample_weights.to(device), device)
-    best_models_names += '\tBalanced accuracy\tF-measure\tF1\tAUCROC\tAUPR\tPosPrec\tPosRecall\tNegPrec\tNegRecall\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\n'.format(  perf['balanced_acc'],
+    best_models_names += '\tBalanced accuracy\tF1\tAUCROC\tAUPR\tPosPrec\tPosRecall\tNegPrec\tNegRecall\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\n'.format(  perf['balanced_acc'],
                                                                                  perf['f1'],
-                                                                                 perf['real_f1'],
                                                                                  perf['roc_auc'],
                                                                                  perf['aupr'],
                                                                                  perf['pos_prec'],
@@ -336,7 +335,6 @@ rocaucs = []
 f1s = []
 auprs = []
 losses = []
-fms = []
 pos_precs = []
 pos_recalls = []
 neg_precs = []
@@ -344,10 +342,9 @@ neg_recalls = []
 for perf in perfs_rounds:
     balanced_accs.append(perf['balanced_acc'])
     rocaucs.append(perf['roc_auc'])
-    f1s.append(perf['real_f1'])
+    f1s.append(perf['f1'])
     auprs.append(perf['aupr'])
     losses.append(perf['loss'])
-    fms.append(perf['f1'])
     pos_precs.append(perf['pos_prec'])
     pos_recalls.append(perf['pos_recall'])
     neg_precs.append(perf['neg_prec'])
@@ -359,11 +356,9 @@ f1s = np.array(f1s)
 auprs = np.array(auprs)
 losses = np.array(losses)
 
-summ = best_models_names +  ' Balanced accuracy\tstd\tF-measure\tstd\tF1\tstd\tAUCROC\tstd\tAUPR\tstd\tPosPrec\tstd\tPosRecall\tstd\tNegPrec\tstd\tNegRecall\tstd\n' \
-       '{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}'.format(   np.mean(balanced_accs),
+summ = best_models_names +  ' Balanced accuracy\tstd\tF1\tstd\tAUCROC\tstd\tAUPR\tstd\tPosPrec\tstd\tPosRecall\tstd\tNegPrec\tstd\tNegRecall\tstd\n' \
+       '{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}\t{:.5f}'.format(   np.mean(balanced_accs),
                                                                                    np.std(balanced_accs),
-                                                                                  np.mean(fms),
-                                                                                  np.std(fms),
                                                                                     np.mean(f1s),
                                                                                    np.std(f1s),
                                                                                    np.mean(rocaucs),
