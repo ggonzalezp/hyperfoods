@@ -37,7 +37,7 @@ Model with Chebyshev filter (cross-validation to optimize hyperparameters):
 <br>
 
 ```
-python ChebModel_CV_hpsearch.py --out_dir 'cheb_nlayers_2_hidden_8' --device_idx 3 --norm False --num_layers 2 --hidden_gcn 8 --epochs 1 --dataset_dir 'dataset/test' 
+python ChebModel_CV_hpsearch.py --out_dir 'cheb_nlayers_2_hidden_8' --device_idx 3 --norm False --num_layers 2 --hidden_gcn 8 --epochs 100 --dataset_dir 'dataset' 
 ```
 
 <br>
