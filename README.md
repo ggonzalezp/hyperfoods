@@ -4,7 +4,7 @@
 Code repository for 'Predicting Anticancer Hyperfoods with Graph Convolutional Networks'
 
 
-0. De-compress dataset and install libraries
+0. Extract dataset and install libraries
 ```
 tar -xzvf dataset.tar.gz
 conda create --name hyperfoods python=3.6.9 pandas=0.25.1 matplotlib=3.1.2
